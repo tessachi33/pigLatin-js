@@ -11,11 +11,19 @@
 }
 
 
-.pig .result {
-  text-color: white;
+  .pig{
+  text-color: red;
+}
+
+.result {
+  text-color: red;
 }
 
 .gir {
-  margin-bottom:60px;
   float:right;
+}
+
+
+.bubble {
+  float:left;
 }
