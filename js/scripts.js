@@ -61,12 +61,12 @@ var pigLatin = function(word) {
 
 
 $(document).ready(function() {
-  $("form#factorial").submit(function(event) {
-    var number= parseInt($("input#number").val());
-    var result = factorial(number);
-
-      $(".number").text(number)
-      $(".final").text(result)
+  $("form#latin").submit(function(event) {
+    var word= ($("input#word").val());
+  //  var result = pigLatin(word);
+      //
+      $(".pig").text(word)
+      // $(".final").text(result)
        $("#result").show()
 
 
