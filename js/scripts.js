@@ -37,7 +37,7 @@ var startWithTwoOrMoreCons = function(splitWord) {
 };
 
 var backToWord = function(splitWord) {
-  return splitWord.toString().replace(/[^\w]/g, "");
+  return splitWord.toString().replace(/[,]/g, "");
 }
 
 var addAy = function(backToWord) {
@@ -47,12 +47,14 @@ var addAy = function(backToWord) {
 var pigLatin = function(word) {
   var word = lowerWord(word);
   var splitting = splitWord(word);
-  if (startWithVowel(splitting) === true) {
+   if (word.includes("y")){
+    return ("Ogay Omehay 'Y' ouryay unkdray!");
+  } else if (startWithVowel(splitting) === true) {
     backToWord(splitting);
-    return (splitting + "ay").toString().replace(/[^\w]/g, "");
+    return (splitting + "ay").toString().replace(/[,]/g, "");
     }else {
       startWithTwoOrMoreCons(splitting);
-      return (splitting + "ay").toString().replace(/[^\w]/g, "");
+      return (splitting + "ay").toString().replace(/[,]/g, "");
     }
   // if it starts with a vowel
     // return word + ay
