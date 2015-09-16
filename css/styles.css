@@ -1,3 +1,21 @@
 #result {
   display: none;
 }
+
+.container .btn {
+  margin-top: 10px;
+}
+
+#latin {
+  margin-top:40px;
+}
+
+
+.pig .result {
+  text-color: white;
+}
+
+.gir {
+  margin-bottom:60px;
+  float:right;
+}

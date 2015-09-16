@@ -56,10 +56,6 @@ var pigLatin = function(word) {
       startWithTwoOrMoreCons(splitting);
       return (splitting + "ay").toString().replace(/[,]/g, "");
     }
-  // if it starts with a vowel
-    // return word + ay
-  //  else if its a consonant
-    // return pig latinized version
 };
 
 
