@@ -47,11 +47,12 @@ var addAy = function(backToWord) {
 var pigLatin = function(word) {
   var word = lowerWord(word);
   var splitting = splitWord(word);
-  if (splitting(startWithVowel) = true) {
-    return splitting + "ay"}
-    else {
+  if (startWithVowel(splitting) === true) {
+    backToWord(splitting);
+    return (splitting + "ay").toString().replace(/[^\w]/g, "");
+    }else {
       startWithTwoOrMoreCons(splitting);
-      return splitting + "ay";
+      return (splitting + "ay").toString().replace(/[^\w]/g, "");
     }
   // if it starts with a vowel
     // return word + ay
@@ -63,10 +64,9 @@ var pigLatin = function(word) {
 $(document).ready(function() {
   $("form#latin").submit(function(event) {
     var word= ($("input#word").val());
-  //  var result = pigLatin(word);
-      //
-      $(".pig").text(word)
-      // $(".final").text(result)
+   var result = pigLatin(word);
+
+      $(".pig").text(result)
        $("#result").show()
 
 

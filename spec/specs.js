@@ -38,14 +38,18 @@ describe('startWithTwoOrMoreCons', function(){
 
 describe('addAy', function(){
   it("will put ay at the end of the char array", function() {
-    expect(addAy("abc")).to.eql("abcay
-
-    ");
+    expect(addAy("abc")).to.eql("abcay");
   });
 });
 
 describe('backToWord', function(){
   it("will convert back to a string", function() {
     expect(backToWord(["a", "b", "c"])).to.equal("abc");
+  });
+});
+
+describe('pigLatin', function(){
+  it("will convert tea to eatay", function() {
+    expect(pigLatin("tea")).to.equal("eatay");
   });
 });
