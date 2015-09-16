@@ -11,19 +11,25 @@
 }
 
 
-  .pig{
-  text-color: red;
-}
 
 .result {
   text-color: red;
 }
 
+.bubble {
+  position: relative;
+   width: 250px;}
+
+  .bubble h5 { position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+     width: 218px;
+     font-family: 'Sigmar One', cursive;
+          color: #C44A96;
+     margin-left: 70px;
+     margin-top:20px; }
+
 .gir {
   float:right;
-}
-
-
-.bubble {
-  float:left;
 }
